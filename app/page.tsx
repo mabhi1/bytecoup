@@ -1,4 +1,4 @@
-import Hero from "@/components/pages/home/hero";
+import HeroSection from "@/components/pages/home/hero-section";
 import ReasonCards from "@/components/pages/home/reason-cards";
 
 export default function Home() {
@@ -46,7 +46,7 @@ export default function Home() {
 
   return (
     <div>
-      <Hero />
+      <HeroSection />
       <div className="text-4xl">Why Delite Solutions?</div>
       <ReasonCards items={reasons} />
     </div>

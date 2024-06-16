@@ -7,7 +7,7 @@ import { Button } from "../../ui/button";
 import Link from "next/link";
 import { ContactIcon, ServerIcon } from "lucide-react";
 
-export default function Hero() {
+export default function HeroSection() {
   return (
     <div className="flex items-center mt-20 mb-28">
       <div className="w-[65%] hidden lg:block">
@@ -22,8 +22,8 @@ export default function Hero() {
             }}
             className="bg-gradient-to-br from-slate-500 dark:from-slate-300 to-slate-800 dark:to-slate-500 bg-clip-text text-5xl font-medium tracking-tight text-transparent"
           >
-            Creating Memorable Online Experiences That Help Your <span className="text-primary">Business</span> Stand
-            Out.
+            Creating memorable online experiences that help your <span className="text-primary">Business</span> stand
+            out.
           </motion.div>
         </LampContainer>
         <div className="flex gap-5 px-5 pt-5">

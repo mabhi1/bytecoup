@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
 import Header from "@/components/layout/header";
-import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
 
@@ -19,10 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(heebo.className, "w-full max-w-7xl mx-auto p-5")}>
+      <body className={heebo.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
-          <main>{children}</main>
+          <main className="w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
         </ThemeProvider>
       </body>
     </html>
