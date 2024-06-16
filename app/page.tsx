@@ -1,5 +1,6 @@
 import HeroSection from "@/components/pages/home/hero-section";
 import ReasonCards from "@/components/pages/home/reason-cards";
+import { Testimonials } from "@/components/pages/home/testimonials";
 
 export default function Home() {
   const reasons = [
@@ -49,6 +50,7 @@ export default function Home() {
       <HeroSection />
       <div className="text-4xl">Why Delite Solutions?</div>
       <ReasonCards items={reasons} />
+      <Testimonials />
     </div>
   );
 }

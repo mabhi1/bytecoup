@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Heebo } from "next/font/google";
-import Header from "@/components/layout/header";
+import Header from "@/components/layout/header/header";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
+import Footer from "@/components/layout/footer/footer";
 
 const heebo = Heebo({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
           <main className="w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

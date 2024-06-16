@@ -5,7 +5,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "lucide-react";
-import { Button } from "../ui/button";
+import { Button } from "../../ui/button";
 
 export default function Navigation() {
   const { setTheme, theme } = useTheme();
@@ -42,7 +42,7 @@ export default function Navigation() {
             href={link.href}
             key={link.href}
             className={cn(
-              "flex items-center uppercase z-10 hover:underline underline-offset-4 hover:text-primary",
+              "flex items-center capitalize z-10 hover:underline underline-offset-4 hover:text-primary",
               isActive(link.href) && "text-primary underline"
             )}
           >
