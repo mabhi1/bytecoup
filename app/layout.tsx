@@ -4,6 +4,7 @@ import Header from "@/components/layout/header/header";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
 import Footer from "@/components/layout/footer/footer";
+import { cn } from "@/lib/utils";
 
 const heebo = Heebo({ subsets: ["latin"] });
 
@@ -19,13 +20,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={heebo.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <body className={cn(heebo.className, "flex flex-col min-h-screen")}>
           <Header />
-          <main className="w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
+          <main className="flex-1 w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
           <Footer />
-        </ThemeProvider>
-      </body>
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

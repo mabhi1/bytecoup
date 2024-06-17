@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-20 border-t grid grid-cols-4 gap-16">
+    <footer className="py-12 px-20 border-t grid grid-cols-2 md:grid-cols-4 gap-16">
       <div className="flex flex-col gap-5 col-span-2">
         <div>
           <div className="uppercase text-lg font-medium">Delite Solutions</div>

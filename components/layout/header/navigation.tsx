@@ -35,7 +35,7 @@ export default function Navigation() {
   };
 
   return (
-    <div className="flex gap-8">
+    <div className="gap-8 hidden md:flex">
       <nav className="flex gap-8">
         {links.map((link) => (
           <Link
