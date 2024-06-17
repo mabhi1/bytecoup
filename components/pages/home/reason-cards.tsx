@@ -18,7 +18,7 @@ export default function ReasonCards({
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className={cn("grid grid-cols-2  lg:grid-cols-3", className)}>
+    <div className={cn("grid grid-cols-2 lg:grid-cols-3", className)}>
       {items.map((item, idx) => (
         <div
           key={item?.title}
@@ -29,7 +29,7 @@ export default function ReasonCards({
           <AnimatePresence>
             {hoveredIndex === idx && (
               <motion.span
-                className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-3xl"
+                className="absolute inset-0 h-full w-full bg-primary/10 block rounded-3xl"
                 layoutId="hoverBackground"
                 initial={{ opacity: 0 }}
                 animate={{
@@ -45,7 +45,7 @@ export default function ReasonCards({
           </AnimatePresence>
           <Card>
             <CardTitle className="flex gap-2">
-              <BadgeCheckIcon className="w-6 text-green-700 dark:text-green-400" />
+              <BadgeCheckIcon className="w-6 text-green-400" />
               {item.title}
             </CardTitle>
             <CardDescription>{item.description}</CardDescription>
@@ -60,7 +60,7 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-white dark:bg-black border border-slate-300 dark:border-white/[0.2] group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-4 overflow-hidden bg-background border border-white/[0.2] group-hover:border-slate-700 relative z-20",
         className
       )}
     >

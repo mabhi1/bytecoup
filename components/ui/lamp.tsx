@@ -54,7 +54,7 @@ export const LampContainer = ({ children, className }: { children: React.ReactNo
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-primary dark:bg-primary blur-2xl"
+          className="absolute inset-auto z-30 h-36 w-64 -translate-y-[6rem] rounded-full bg-primary blur-2xl"
         ></motion.div>
         <motion.div
           initial={{ width: "15rem" }}
@@ -64,7 +64,7 @@ export const LampContainer = ({ children, className }: { children: React.ReactNo
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-primary dark:bg-primary "
+          className="absolute inset-auto z-50 h-0.5 w-[30rem] -translate-y-[7rem] bg-primary "
         ></motion.div>
 
         <div className="absolute inset-auto z-40 h-44 w-full -translate-y-[12.5rem] bg-background "></div>

@@ -2,7 +2,7 @@ import TestimonailCards from "@/components/pages/home/testimonial-cards";
 
 export function Testimonials() {
   return (
-    <div className="rounded-md flex flex-col gap-10 py-10 antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="rounded-md flex flex-col gap-10 py-10 antialiased bg-background items-center justify-center relative overflow-hidden">
       <div className="text-3xl font-light uppercase">Client testimonials</div>
       <TestimonailCards items={testimonials} direction="right" speed="slow" />
     </div>
