@@ -46,9 +46,9 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <HeroSection />
-      <div className="text-4xl">Why Delite Solutions?</div>
+      <div className="text-3xl font-light uppercase mx-auto">Why Delite Solutions?</div>
       <ReasonCards items={reasons} />
       <Testimonials />
     </div>
