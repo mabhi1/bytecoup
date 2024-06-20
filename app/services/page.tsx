@@ -3,10 +3,30 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Separator } from "@/components/ui/separator";
-//@ts-ignore
-import Microlink from "@microlink/react";
 
 export default function Services() {
+  const workExamples = [
+    {
+      src: "/engineer.png",
+      alt: "We are engineers",
+      href: "https://www.weareengineer.com",
+    },
+    {
+      src: "/naukri.png",
+      alt: "Sarkari Exam Hub",
+      href: "https://sarkariexamshub.com",
+    },
+    {
+      src: "/number1fan.png",
+      alt: "Number 1 Fan",
+      href: "https://number1fan.co/",
+    },
+    {
+      src: "/roomie.png",
+      alt: "Roomie Listings",
+      href: "https://roomielistings.com",
+    },
+  ];
   return (
     <div className="py-16 space-y-12">
       <div className="flex gap-5">
@@ -139,16 +159,18 @@ export default function Services() {
       </motion.div>
       <Separator />
       <div className="text-3xl font-light uppercase text-center py-8">Work Samples</div>
-      <div className="flex flex-wrap gap-8 justify-center">
-        <Microlink
-          url="https://www.weareengineer.com"
-          size="large"
-          style={{ borderRadius: "5px" }}
-          media="screenshot"
-        />
-        <Microlink url="https://sarkariexamshub.com" size="large" style={{ borderRadius: "5px" }} media="screenshot" />
-        <Microlink url="https://number1fan.co/" size="large" style={{ borderRadius: "5px" }} media="screenshot" />
-        <Microlink url="https://number1fan.co/" size="large" style={{ borderRadius: "5px" }} media="screenshot" />
+      <div className="grid grid-cols-3 gap-8">
+        {workExamples.map((site) => (
+          <a key={site.src} href={site.href} target="_blank">
+            <Image
+              src={site.src}
+              alt={site.alt}
+              width={1710}
+              height={968}
+              className="w-[30rem] h-auto rounded hover:scale-105 transition-transform duration-200"
+            />
+          </a>
+        ))}
       </div>
     </div>
   );
