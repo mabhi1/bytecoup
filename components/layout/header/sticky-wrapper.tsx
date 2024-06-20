@@ -21,7 +21,7 @@ export default function StickyWrapper({ children }: { children: React.ReactNode 
   }, []);
 
   return (
-    <div className="primary-header sticky p-5 md:py-5 md:px-20 top-0 z-50 w-full bg-background/60 backdrop-blur">
+    <div className="primary-header sticky p-5 top-0 z-50 w-full bg-background/60 backdrop-blur border-b">
       {children}
     </div>
   );

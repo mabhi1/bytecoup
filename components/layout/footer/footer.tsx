@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -13,16 +14,20 @@ export default function Footer() {
           Comprehensive digital solutions for web and mobile development, with 24/7 maintenance. We craft, optimize, and
           support your digital success. Trust us to transform your vision into an engaging and scalable online presence.
         </div>
-        <div className="text-muted-foreground">© 2024 Delite Solutions | Privacy Policy</div>
+        <div className="text-muted-foreground">© 2024 Delite Solutions | Terms and Conditions | Privacy Policy</div>
       </div>
       <div className="flex flex-col gap-5">
         <div className="uppercase text-lg font-medium">Links</div>
         <div className="flex flex-col gap-1">
-          <Link href="/services">Services</Link>
-          <Link href="/services">Web Applications</Link>
-          <Link href="/services">Mobile Applications</Link>
-          <Link href="/services">About Us</Link>
-          <Link href="/services">Services</Link>
+          <Link href="/services" className="hover:text-primary">
+            Services
+          </Link>
+          <Link href="/services" className="hover:text-primary">
+            About Us
+          </Link>
+          <Link href="/services" className="hover:text-primary">
+            Contact Us
+          </Link>
         </div>
       </div>
       <div className="flex flex-col gap-5">
