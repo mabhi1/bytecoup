@@ -1,32 +1,9 @@
-"use client";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Separator } from "@/components/ui/separator";
+import MotionDiv from "@/components/ui/motion-div";
 
 export default function Services() {
-  const workExamples = [
-    {
-      src: "/engineer.png",
-      alt: "We are engineers",
-      href: "https://www.weareengineer.com",
-    },
-    {
-      src: "/naukri.png",
-      alt: "Sarkari Exam Hub",
-      href: "https://sarkariexamshub.com",
-    },
-    {
-      src: "/number1fan.png",
-      alt: "Number 1 Fan",
-      href: "https://number1fan.co/",
-    },
-    {
-      src: "/roomie.png",
-      alt: "Roomie Listings",
-      href: "https://roomielistings.com",
-    },
-  ];
   return (
     <div className="py-16 space-y-12">
       <div className="flex gap-5">
@@ -50,21 +27,7 @@ export default function Services() {
         <FlipWords words={["Better", "Latest", "Great"]} />
         <FlipWords words={["styling", "technology", "Support"]} />
       </div>
-      <motion.div
-        className="flex items-center gap-8"
-        initial={{
-          opacity: 0,
-          x: 50,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
-      >
+      <MotionDiv direction="rtol" className="flex items-center gap-8">
         <Image src="/webdev.png" alt="Service offered" width={2048} height={1542} className="w-96 h-fit shadow-lg" />
         <div className="space-y-5">
           <div className="text-3xl font-light uppercase">Web application development</div>
@@ -84,23 +47,9 @@ export default function Services() {
             <li>API Integration and Development</li>
           </ul>
         </div>
-      </motion.div>
+      </MotionDiv>
       <Separator />
-      <motion.div
-        className="flex gap-8 items-center"
-        initial={{
-          opacity: 0,
-          x: -50,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
-      >
+      <MotionDiv direction="ltor" className="flex items-center gap-8">
         <div className="space-y-5">
           <div className="text-3xl font-light uppercase">Mobile Application Development</div>
           <div>
@@ -120,23 +69,9 @@ export default function Services() {
           </ul>
         </div>
         <Image src="/mobdev.png" alt="Service offered" width={2048} height={1542} className="w-96 h-fit" />
-      </motion.div>
+      </MotionDiv>
       <Separator />
-      <motion.div
-        className="flex gap-8 items-center"
-        initial={{
-          opacity: 0,
-          x: 50,
-        }}
-        whileInView={{
-          opacity: 1,
-          x: 0,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
-      >
+      <MotionDiv direction="rtol" className="flex items-center gap-8">
         <Image src="/deskdev.webp" alt="Service offered" width={2048} height={1542} className="w-96 h-fit" />
         <div className="space-y-5">
           <div className="text-3xl font-light uppercase">Desktop Application Development</div>
@@ -156,22 +91,7 @@ export default function Services() {
             <li>Maintenance and Support</li>
           </ul>
         </div>
-      </motion.div>
-      <Separator />
-      <div className="text-3xl font-light uppercase text-center py-8">Work Samples</div>
-      <div className="grid grid-cols-3 gap-8">
-        {workExamples.map((site) => (
-          <a key={site.src} href={site.href} target="_blank">
-            <Image
-              src={site.src}
-              alt={site.alt}
-              width={1710}
-              height={968}
-              className="w-[30rem] h-auto rounded hover:scale-105 transition-transform duration-200"
-            />
-          </a>
-        ))}
-      </div>
+      </MotionDiv>
     </div>
   );
 }

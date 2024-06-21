@@ -17,6 +17,10 @@ export default function Navigation() {
       href: "/services",
     },
     {
+      title: "work",
+      href: "/work",
+    },
+    {
       title: "about",
       href: "/about",
     },

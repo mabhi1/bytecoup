@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -23,10 +22,13 @@ export default function Footer() {
             Services
           </Link>
           <Link href="/services" className="hover:text-primary">
-            About Us
+            Work Samples
           </Link>
           <Link href="/services" className="hover:text-primary">
             Contact Us
+          </Link>
+          <Link href="/services" className="hover:text-primary">
+            FAQs
           </Link>
         </div>
       </div>
