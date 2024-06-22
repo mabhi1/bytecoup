@@ -21,7 +21,7 @@ export default function WebAppContent() {
     },
     {
       title: "Content Management Systems (CMS)",
-      content: "Easy-to-use platforms for managing your website&apos;s content.",
+      content: "Easy-to-use platforms for managing your website's content.",
     },
     {
       title: "Progressive Web Apps (PWAs)",

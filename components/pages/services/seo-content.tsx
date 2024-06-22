@@ -13,7 +13,7 @@ export default function SEOContent() {
     },
     {
       title: "Technical SEO",
-      content: "Ensuring your website’s infrastructure supports search engine indexing and crawling.",
+      content: "Ensuring your website's infrastructure supports search engine indexing and crawling.",
     },
     {
       title: "Content Optimization",

@@ -5,11 +5,11 @@ export default function BrandingContent() {
   const features = [
     {
       title: "Brand Strategy",
-      content: "Developing a clear, cohesive strategy that reflects your brand’s mission, vision, and values.",
+      content: "Developing a clear, cohesive strategy that reflects your brand's mission, vision, and values.",
     },
     {
       title: "Logo and Visual Identity Design",
-      content: "Crafting unique logos and visual elements that capture your brand’s essence.",
+      content: "Crafting unique logos and visual elements that capture your brand's essence.",
     },
     {
       title: "Brand Messaging",
@@ -17,7 +17,7 @@ export default function BrandingContent() {
     },
     {
       title: "Brand Positioning",
-      content: "Identifying and establishing your brand’s place in the market.",
+      content: "Identifying and establishing your brand's place in the market.",
     },
     {
       title: "Brand Guidelines",
