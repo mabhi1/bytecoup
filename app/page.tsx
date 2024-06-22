@@ -14,8 +14,9 @@ export default function Home() {
       description: "Our solutions are customized to fit the unique requirements and goals of your business.",
     },
     {
-      title: "Responsive Design",
-      description: "We ensure your site looks and functions beautifully on all devices.",
+      title: "24/7 Customer Support",
+      description:
+        "Experience peace of mind with our 24/7 customer support, ensuring your solutions are always running smoothly.",
     },
     {
       title: "Latest Technologies",
