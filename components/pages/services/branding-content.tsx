@@ -33,7 +33,7 @@ export default function BrandingContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Branding</p>
-          <div>
+          <div className="text-slate-300">
             Define and amplify your brand identity with our expert branding services. We help you craft a compelling
             brand narrative that resonates with your target audience, builds trust, and differentiates you in the
             marketplace. From logo design to brand messaging, we ensure every element aligns with your vision and

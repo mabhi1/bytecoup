@@ -33,7 +33,7 @@ export default function DesktopAppContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Desktop Application Development</p>
-          <div>
+          <div className="text-slate-300">
             Empower your business with our powerful, user-friendly desktop applications designed for various operating
             systems, including Windows, macOS, and Linux. Whether you need a standalone application or a complex
             enterprise solution, our desktop application development services ensure robust performance, enhanced

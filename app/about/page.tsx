@@ -89,6 +89,12 @@ export default function About() {
             applications remain up-to-date and effective.
           </span>
         </li>
+        <li>
+          24/7 Customer Support:{" "}
+          <span className="text-muted-foreground">
+            Our dedicated team is always available to assist you, resolving issues promptly and effectively.
+          </span>
+        </li>
       </ul>
       <div className="text-3xl font-light uppercase pt-10">Our Values</div>
       <ul className="space-y-2">

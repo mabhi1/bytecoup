@@ -33,7 +33,7 @@ export default function SEOContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Search Engine Optimization (SEO)</p>
-          <div>
+          <div className="text-slate-300">
             Maximize your online reach and attract more traffic with our comprehensive SEO services. We employ advanced
             strategies to enhance your website&apos;s visibility on search engines, ensuring that your business ranks
             higher and reaches the right audience. Our approach is tailored to your unique needs, driving organic growth

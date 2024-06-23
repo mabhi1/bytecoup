@@ -34,7 +34,7 @@ export default function MobileAppContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Mobile Application Development</p>
-          <div>
+          <div className="text-slate-300">
             Stay ahead in the mobile-first world with our high-performance, feature-rich mobile applications for both
             iOS and Android platforms. Our mobile app development services are tailored to provide an exceptional user
             experience, combining cutting-edge technology with intuitive design to deliver apps that captivate users and

@@ -34,7 +34,7 @@ export default function DigitalMarketingContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Digital Marketing</p>
-          <div>
+          <div className="text-slate-300">
             Drive engagement and conversions with our innovative digital marketing solutions. We blend creativity with
             data-driven strategies to create impactful campaigns that resonate with your audience and deliver measurable
             results. Our holistic approach covers every aspect of digital marketing, ensuring your brand reaches and

@@ -33,7 +33,7 @@ export default function ChatbotContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Chatbot Development</p>
-          <div>
+          <div className="text-slate-300">
             Revolutionize your customer engagement with our sophisticated chatbot development services. We create
             intelligent, conversational AI solutions that provide seamless interactions, streamline support, and enhance
             user experiences. Our chatbots are designed to understand and respond to user queries effectively,

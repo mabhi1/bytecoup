@@ -33,7 +33,7 @@ export default function WebAppContent() {
       <div className="flex items-center flex-row-reverse gap-8">
         <div className="space-y-5">
           <p className="text-3xl font-light uppercase">Web Application Development</p>
-          <div>
+          <div className="text-slate-300">
             Unlock the full potential of your online presence with our cutting-edge web application development
             services. We create dynamic, responsive, and user-friendly web applications that cater to your business
             requirements, ensuring seamless performance and engaging user experiences. Our team leverages the latest
