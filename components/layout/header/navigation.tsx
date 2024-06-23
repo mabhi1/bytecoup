@@ -3,6 +3,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { ModeToggle } from "@/components/ui/mode-toggle";
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -48,6 +49,7 @@ export default function Navigation() {
           {link.title}
         </Link>
       ))}
+      <ModeToggle />
     </nav>
   );
 }

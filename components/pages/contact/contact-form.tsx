@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -39,7 +40,14 @@ export function ContactForm() {
         </LabelInputContainer>
         <LabelInputContainer className="mb-4 flex-row items-center gap-2 space-y-1">
           <Checkbox id="terms" />
-          <Label htmlFor="terms">Accept terms and conditions</Label>
+          <Label htmlFor="terms">
+            Accept{" "}
+            <Link href="/terms&conditions" legacyBehavior passHref>
+              <Button variant="link" className="p-0">
+                terms and conditions.
+              </Button>
+            </Link>{" "}
+          </Label>
         </LabelInputContainer>
 
         <Button type="submit" className="w-full">

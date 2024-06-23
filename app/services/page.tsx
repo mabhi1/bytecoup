@@ -66,22 +66,24 @@ export default function Services() {
       <div className="h-[20rem] md:h-[40rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start my-40">
         <Tabs tabs={tabs} />
       </div>
-      <h2 className="text-3xl font-light uppercase pt-20">Any questions?</h2>
-      <p>
-        Found something you want or have any question? You can reach out to us on{" "}
-        <Link href="/contact" legacyBehavior passHref>
-          <Button variant="link" className="p-0">
-            contact page.
-          </Button>
-        </Link>{" "}
-        You can also visit our{" "}
-        <Link href="/faq" legacyBehavior passHref>
-          <Button variant="link" className="p-0">
-            FAQs
-          </Button>
-        </Link>{" "}
-        section for commonly asked questions about our services.
-      </p>
+      <div className="space-y-5">
+        <div className="text-3xl font-light uppercase pt-20">Any questions?</div>
+        <div>
+          Found something you want or have any question? You can reach out to us on{" "}
+          <Link href="/contact" legacyBehavior passHref>
+            <Button variant="link" className="p-0">
+              contact page.
+            </Button>
+          </Link>{" "}
+          You can also visit our{" "}
+          <Link href="/faq" legacyBehavior passHref>
+            <Button variant="link" className="p-0">
+              FAQs
+            </Button>
+          </Link>{" "}
+          section for commonly asked questions about our services.
+        </div>
+      </div>
     </div>
   );
 }

@@ -20,7 +20,7 @@ export default function HeroSection() {
               duration: 0.8,
               ease: "easeInOut",
             }}
-            className="bg-gradient-to-b from-slate-300 to-slate-600 text-center lg:text-left bg-clip-text text-5xl font-medium tracking-tight text-transparent"
+            className="bg-gradient-to-b from-slate-500 to-slate-400 dark:from-slate-400 dark:to-slate-500 text-center lg:text-left bg-clip-text text-5xl font-medium tracking-tight text-transparent"
           >
             Creating memorable online experiences that help your <span className="text-primary">Business</span> stand
             out.
@@ -41,7 +41,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="my-28 md:hidden bg-gradient-to-b from-slate-300 to-slate-600 bg-clip-text text-5xl font-medium tracking-tight text-transparent">
+      <div className="my-28 md:hidden bg-gradient-to-b from-slate-500 to-slate-400 dark:from-slate-400 dark:to-slate-500 bg-clip-text text-5xl font-medium tracking-tight text-transparent">
         Creating Memorable Online Experiences That Help Your <span className="text-primary">Business</span> Stand Out.
       </div>
       <div className="w-[35%] hidden lg:block">

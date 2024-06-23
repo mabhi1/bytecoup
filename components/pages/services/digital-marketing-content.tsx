@@ -1,5 +1,4 @@
-import Image from "next/image";
-import FeatureCard from "./feature-card";
+import ServiceCard from "./service-card";
 
 export default function DigitalMarketingContent() {
   const features = [
@@ -29,25 +28,19 @@ export default function DigitalMarketingContent() {
       content: "In-depth performance analysis to continually refine and improve your marketing strategy.",
     },
   ];
+  const image = {
+    src: "/digital-marketing.webp",
+    alt: "Service offered",
+  };
   return (
-    <div className="w-full space-y-8 overflow-hidden relative h-full rounded-2xl p-10 text-white bg-gradient-to-br from-amber-700 to-yellow-900">
-      <div className="flex items-center flex-row-reverse gap-8">
-        <div className="space-y-5">
-          <p className="text-3xl font-light uppercase">Digital Marketing</p>
-          <div className="text-slate-300">
-            Drive engagement and conversions with our innovative digital marketing solutions. We blend creativity with
+    <ServiceCard
+      heading="Digital Marketing"
+      description="Drive engagement and conversions with our innovative digital marketing solutions. We blend creativity with
             data-driven strategies to create impactful campaigns that resonate with your audience and deliver measurable
             results. Our holistic approach covers every aspect of digital marketing, ensuring your brand reaches and
-            captivates your target audience.
-          </div>
-        </div>
-        <Image src="/digital-marketing.webp" alt="Service offered" width={2048} height={1542} className="h-44 w-auto" />
-      </div>
-      <div className="grid grid-cols-3 gap-8">
-        {features.map((feature) => (
-          <FeatureCard key={feature.title} title={feature.title} content={feature.content} />
-        ))}
-      </div>
-    </div>
+            captivates your target audience."
+      image={image}
+      features={features}
+    />
   );
 }
