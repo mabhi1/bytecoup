@@ -15,8 +15,8 @@ export default function FAQSections({ title, queries }: FAQSection) {
       <Accordion type="single" collapsible className="w-full">
         {queries.map((query) => (
           <AccordionItem value={query.question} key={query.question}>
-            <AccordionTrigger className="font-light">{query.question}</AccordionTrigger>
-            <AccordionContent>{query.answer}</AccordionContent>
+            <AccordionTrigger className="font-light capitalize">{query.question}</AccordionTrigger>
+            <AccordionContent className="capitalize bg-slate-800 rounded-b p-2">{query.answer}</AccordionContent>
           </AccordionItem>
         ))}
       </Accordion>
