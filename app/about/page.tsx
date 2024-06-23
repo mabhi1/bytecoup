@@ -126,7 +126,7 @@ export default function About() {
       </div>
       <Link href="/contact" passHref legacyBehavior>
         <Button>
-          <ContactIcon className="w-4 mr-1" />
+          <ContactIcon className="w-5 mr-1" />
           Contact Us
         </Button>
       </Link>

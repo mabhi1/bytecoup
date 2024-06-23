@@ -29,13 +29,13 @@ export default function HeroSection() {
         <div className="flex gap-5 px-5 pt-5 justify-center lg:justify-start">
           <Link href="/services" passHref legacyBehavior>
             <Button>
-              <ServerIcon className="w-4 mr-1" />
+              <ServerIcon className="w-5 mr-1" />
               Our Services
             </Button>
           </Link>
           <Link href="/contact" passHref legacyBehavior>
             <Button variant="secondary">
-              <ContactIcon className="w-4 mr-1" />
+              <ContactIcon className="w-5 mr-1" />
               Contact Us
             </Button>
           </Link>

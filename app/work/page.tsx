@@ -23,6 +23,11 @@ export default function WorkSamples() {
       alt: "Roomie Listings",
       href: "https://roomielistings.com",
     },
+    {
+      src: "/codemystery.png",
+      alt: "Code Mystery",
+      href: "https://codemystery.vercel.app/",
+    },
   ];
   return (
     <MotionDiv direction="btot" className="py-16">
