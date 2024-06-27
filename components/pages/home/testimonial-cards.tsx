@@ -82,7 +82,7 @@ export default function TestimonialCards({
         {items.map((item) => (
           <li
             className="w-[350px] max-w-full relative bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-700 dark:to-blue-900 rounded-2xl border border-b-0 flex-shrink-0 border-blue-100 dark:border-blue-700 px-8 py-6 md:w-[450px]"
-            key={item.name}
+            key={item.quote}
           >
             <blockquote>
               <div
