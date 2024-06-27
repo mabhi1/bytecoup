@@ -42,11 +42,9 @@ export function ContactForm() {
           <Checkbox id="terms" />
           <Label htmlFor="terms">
             Accept{" "}
-            <Link href="/terms&conditions" legacyBehavior passHref>
-              <Button variant="link" className="p-0">
-                terms and conditions.
-              </Button>
-            </Link>{" "}
+            <Button variant="link" className="p-0" asChild>
+              <Link href="/terms&conditions">terms and conditions.</Link>
+            </Button>{" "}
           </Label>
         </LabelInputContainer>
 

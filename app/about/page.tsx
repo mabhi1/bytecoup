@@ -124,12 +124,12 @@ export default function About() {
         Ready to transform your business with innovative digital solutions? Contact us today to discuss how we can help
         you achieve your goals and unlock new opportunities in the digital age.
       </div>
-      <Link href="/contact" passHref legacyBehavior>
-        <Button>
+      <Button asChild>
+        <Link href="/contact">
           <ContactIcon className="w-5 mr-1" />
           Contact Us
-        </Button>
-      </Link>
+        </Link>
+      </Button>
     </div>
   );
 }

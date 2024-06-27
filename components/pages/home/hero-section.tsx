@@ -27,18 +27,18 @@ export default function HeroSection() {
           </motion.div>
         </LampContainer>
         <div className="flex gap-5 px-5 pt-5 justify-center lg:justify-start">
-          <Link href="/services" passHref legacyBehavior>
-            <Button>
+          <Button asChild>
+            <Link href="/services">
               <ServerIcon className="w-5 mr-1" />
               Our Services
-            </Button>
-          </Link>
-          <Link href="/contact" passHref legacyBehavior>
-            <Button variant="secondary">
+            </Link>
+          </Button>
+          <Button variant="secondary" asChild>
+            <Link href="/contact">
               <ContactIcon className="w-5 mr-1" />
               Contact Us
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </div>
       <div className="my-28 md:hidden bg-gradient-to-b from-slate-500 to-slate-400 dark:from-slate-400 dark:to-slate-500 bg-clip-text text-5xl font-medium tracking-tight text-transparent">

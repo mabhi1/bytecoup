@@ -70,17 +70,13 @@ export default function Services() {
         <div className="text-3xl font-light uppercase pt-20">Any questions?</div>
         <div>
           Found something you want or have any question? You can reach out to us on{" "}
-          <Link href="/contact" legacyBehavior passHref>
-            <Button variant="link" className="p-0">
-              contact page.
-            </Button>
-          </Link>{" "}
+          <Button variant="link" className="p-0" asChild>
+            <Link href="/contact">contact page.</Link>
+          </Button>{" "}
           You can also visit our{" "}
-          <Link href="/faq" legacyBehavior passHref>
-            <Button variant="link" className="p-0">
-              FAQs
-            </Button>
-          </Link>{" "}
+          <Button variant="link" className="p-0" asChild>
+            <Link href="/faq">FAQs</Link>
+          </Button>{" "}
           section for commonly asked questions about our services.
         </div>
       </div>

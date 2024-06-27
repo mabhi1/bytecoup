@@ -15,11 +15,9 @@ export default function ContactUs() {
       </p>
       <p className="mt-3">
         You can also check out our{" "}
-        <Link href="/faq" legacyBehavior passHref>
-          <Button variant="link" className="p-0">
-            FAQs
-          </Button>
-        </Link>{" "}
+        <Button variant="link" className="p-0" asChild>
+          <Link href="/faq">FAQs</Link>
+        </Button>{" "}
         for answers to common inquiries about our services.
       </p>
       <ContactForm />
@@ -68,11 +66,9 @@ export default function ContactUs() {
       <p className="mt-3">
         Looking to join our team? Explore career opportunities at delite by visiting our Careers Page. We&apos;re always
         on the lookout for talented individuals to join our dynamic team.{" "}
-        <Link href="/careers" passHref legacyBehavior>
-          <Button variant="link" className="p-0">
-            Go to careers page.
-          </Button>
-        </Link>
+        <Button variant="link" className="p-0" asChild>
+          <Link href="/careers">Go to careers page.</Link>
+        </Button>
       </p>
     </div>
   );

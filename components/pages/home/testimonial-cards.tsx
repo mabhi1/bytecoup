@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
 
 export default function TestimonialCards({
@@ -23,9 +22,6 @@ export default function TestimonialCards({
 }) {
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
-  const { theme } = useTheme();
-
-  console.log(theme);
 
   useEffect(() => {
     addAnimation();

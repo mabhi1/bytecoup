@@ -16,17 +16,17 @@ export default function Footer() {
         </div>
         <div className="text-muted-foreground text-sm">
           © 2024 Delite Solutions |{" "}
-          <Link href="/terms&conditions" legacyBehavior passHref>
-            <Button variant="link" className="p-0 text-sm text-primary/80">
+          <Button variant="link" asChild>
+            <Link href="/terms&conditions" className="p-0 text-sm text-primary/80">
               Terms and Conditions
-            </Button>
-          </Link>{" "}
+            </Link>
+          </Button>{" "}
           |{" "}
-          <Link href="/privacy" legacyBehavior passHref>
-            <Button variant="link" className="p-0 text-sm text-primary/80">
+          <Button variant="link" asChild>
+            <Link href="/privacy" className="p-0 text-sm text-primary/80">
               Privacy Policy
-            </Button>
-          </Link>{" "}
+            </Link>
+          </Button>{" "}
         </div>
       </div>
       <div className="flex flex-col gap-5">
