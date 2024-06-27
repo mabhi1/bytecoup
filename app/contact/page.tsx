@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function ContactUs() {
   return (
     <div className="py-16">
-      <div className="text-3xl font-light uppercase">Let's Connect</div>
+      <div className="text-3xl font-light uppercase">Let&apos;s Connect</div>
       <div className="text-xl font-light mt-8">We&apos;re here to help!</div>
       <p className="mt-3">
         Have questions? Need support? Want to discuss a new project? Have a suggestion for us? We&apos;re here for you
