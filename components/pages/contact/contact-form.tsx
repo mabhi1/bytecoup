@@ -10,6 +10,7 @@ import Image from "next/image";
 import { Textarea } from "@/components/ui/textarea";
 import { Checkbox } from "@/components/ui/checkbox";
 import Link from "next/link";
+import MotionDiv from "@/components/ui/motion-div";
 
 export function ContactForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -42,7 +43,7 @@ export function ContactForm() {
           <Checkbox id="terms" />
           <Label htmlFor="terms">
             Accept{" "}
-            <Button variant="link" className="p-0" asChild>
+            <Button variant="link" className="p-0 text-sm" asChild>
               <Link href="/terms&conditions">terms and conditions.</Link>
             </Button>{" "}
           </Label>
@@ -53,7 +54,9 @@ export function ContactForm() {
           Send Message
         </Button>
       </form>
-      <Image src="/contact-us.webp" width={675} height={450} alt="Contact Us" className="w-[35rem] h-auto" />
+      <MotionDiv direction="rtol">
+        <Image src="/contact-us.webp" width={675} height={450} alt="Contact Us" className="w-[35rem] h-auto" />
+      </MotionDiv>
     </div>
   );
 }

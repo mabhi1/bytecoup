@@ -47,7 +47,7 @@ export function CareerForm() {
         <Checkbox id="terms" />
         <Label htmlFor="terms">
           Accept{" "}
-          <Button variant="link" className="p-0" asChild>
+          <Button variant="link" className="p-0 text-sm" asChild>
             <Link href="/terms&conditions">terms and conditions.</Link>
           </Button>{" "}
         </Label>

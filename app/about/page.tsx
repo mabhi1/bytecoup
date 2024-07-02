@@ -1,12 +1,13 @@
 import AnimatedCounter from "@/components/ui/animated-counter";
 import { Button } from "@/components/ui/button";
+import MotionDiv from "@/components/ui/motion-div";
 import { ContactIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
   return (
-    <div className="py-16 space-y-5">
+    <MotionDiv direction="btot" className="py-16 space-y-5">
       <Image
         src="/office-space.webp"
         alt="Delite"
@@ -130,6 +131,6 @@ export default function About() {
           Contact Us
         </Link>
       </Button>
-    </div>
+    </MotionDiv>
   );
 }

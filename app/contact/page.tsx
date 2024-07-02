@@ -1,11 +1,12 @@
 import { ContactForm } from "@/components/pages/contact/contact-form";
 import { Button } from "@/components/ui/button";
+import MotionDiv from "@/components/ui/motion-div";
 import { MailboxIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactUs() {
   return (
-    <div className="py-16">
+    <MotionDiv direction="btot" className="py-16">
       <div className="text-3xl font-light uppercase">Let&apos;s Connect</div>
       <div className="text-xl font-light mt-8">We&apos;re here to help!</div>
       <p className="mt-3">
@@ -70,6 +71,6 @@ export default function ContactUs() {
           <Link href="/careers">Go to careers page.</Link>
         </Button>
       </p>
-    </div>
+    </MotionDiv>
   );
 }

@@ -9,6 +9,7 @@ import DigitalMarketingContent from "@/components/pages/services/digital-marketi
 import BrandingContent from "@/components/pages/services/branding-content";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import MotionDiv from "@/components/ui/motion-div";
 
 export default function Services() {
   const tabs = [
@@ -49,7 +50,7 @@ export default function Services() {
     },
   ];
   return (
-    <div className="py-16 space-y-12">
+    <MotionDiv direction="btot" className="py-16 space-y-12">
       <div className="flex gap-5">
         <div className="space-y-5">
           <h2 className="text-3xl font-light uppercase">Our Services</h2>
@@ -80,6 +81,6 @@ export default function Services() {
           section for commonly asked questions about our services.
         </div>
       </div>
-    </div>
+    </MotionDiv>
   );
 }

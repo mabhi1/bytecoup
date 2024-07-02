@@ -28,19 +28,19 @@ export default function Footer() {
       <div className="flex flex-col gap-5">
         <div className="uppercase text-lg font-medium">Links</div>
         <div className="flex flex-col gap-1 text-sm">
-          <Link href="/services" className="hover:text-primary">
+          <Link href="/services" className="hover:text-primary w-fit">
             Services
           </Link>
-          <Link href="/work" className="hover:text-primary">
+          <Link href="/work" className="hover:text-primary w-fit">
             Work Samples
           </Link>
-          <Link href="/contact" className="hover:text-primary">
+          <Link href="/contact" className="hover:text-primary w-fit">
             Contact Us
           </Link>
-          <Link href="/careers" className="hover:text-primary">
+          <Link href="/careers" className="hover:text-primary w-fit">
             Careers
           </Link>
-          <Link href="/faq" className="hover:text-primary">
+          <Link href="/faq" className="hover:text-primary w-fit">
             FAQs
           </Link>
         </div>

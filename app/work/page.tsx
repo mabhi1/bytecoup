@@ -30,8 +30,8 @@ export default function WorkSamples() {
     },
   ];
   return (
-    <MotionDiv direction="btot" className="py-16">
-      <div className="text-3xl font-light uppercase text-center py-8">Work Samples</div>
+    <MotionDiv direction="btot" className="py-16 space-y-12">
+      <div className="text-3xl font-light uppercase text-center">Work Samples</div>
       <div className="grid grid-cols-3 gap-8">
         {workExamples.map((site) => (
           <a
