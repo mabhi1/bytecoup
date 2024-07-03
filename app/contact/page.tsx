@@ -46,7 +46,7 @@ export default function ContactUs() {
           </p>
         </div>
         <div>
-          <div className="text-lg md:text-xl md:font-light">Follow Us</div>
+          <div className="text-lg md:text-xl md:font-light mt-5 md:mt-0">Follow Us</div>
           <p className="mt-3 flex gap-2 flex-col">
             Stay connected and follow us on social media for the latest updates, news, and insights from Bytecoup.
             <span>Facebook: [Facebook URL]</span>
