@@ -1,4 +1,7 @@
+"use client";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { cn } from "@/lib/utils";
+import { useState } from "react";
 
 export default function TestimonialCards({
   items,
@@ -9,12 +12,19 @@ export default function TestimonialCards({
     title: string;
   }[];
 }) {
+  const [mousePoniter, setMousePointer] = useState("cursor-grab");
+
   return (
     <Carousel className="w-full" opts={{ align: "start", loop: true }}>
       <CarouselPrevious className="bg-white/60 dark:bg-black/60" />
       <CarouselContent>
         {items.map((item) => (
-          <CarouselItem key={item.quote} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem
+            key={item.quote}
+            className={cn("md:basis-1/2 lg:basis-1/3", mousePoniter)}
+            onMouseDown={() => setMousePointer("cursor-grabbing")}
+            onMouseUp={() => setMousePointer("cursor-grab")}
+          >
             <div className="h-full bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-700 dark:to-blue-900 rounded-2xl border border-b-0 border-blue-100 dark:border-blue-700 px-4 py-3">
               <blockquote>
                 <div
