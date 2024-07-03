@@ -78,7 +78,7 @@ export default function Services() {
           className="w-40 h-auto hidden md:block"
         />
       </div>
-      <div className="h-[85rem] md:h-[40rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start my-40">
+      <div className="h-[90rem] md:h-[40rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start my-40">
         <Tabs tabs={tabs} />
       </div>
       <div className="space-y-5">
