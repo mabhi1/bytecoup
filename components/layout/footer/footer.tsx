@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="px-5 py-12 md:px-8 lg:px-20 border-t grid grid-cols-3 md:grid-cols-6 gap-5 lg:gap-16">
+    <footer className="px-5 py-12 grid grid-cols-3 md:grid-cols-6 gap-5 lg:gap-16 max-w-7xl mx-auto">
       <div className="flex flex-col gap-3 md:gap-5 col-span-3 md:col-span-3">
         <div>
           <div className="uppercase text-lg font-medium">Bytecoup</div>

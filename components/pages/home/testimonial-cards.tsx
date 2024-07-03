@@ -11,7 +11,7 @@ export default function TestimonialCards({
 }) {
   return (
     <Carousel className="w-full" opts={{ align: "start", loop: true }}>
-      <CarouselPrevious />
+      <CarouselPrevious className="bg-white/60 dark:bg-black/60" />
       <CarouselContent>
         {items.map((item) => (
           <CarouselItem key={item.quote} className="md:basis-1/2 lg:basis-1/3">
@@ -35,7 +35,7 @@ export default function TestimonialCards({
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselNext />
+      <CarouselNext className="bg-white/60 dark:bg-black/60" />
     </Carousel>
   );
 }

@@ -13,9 +13,9 @@ export default function About() {
         alt="bytecoup"
         height={2880}
         width={1622}
-        className="w-full max-w-3xl mx-auto rounded-xl h-[12rem] md:h-[27rem]"
+        className="w-full max-w-3xl mx-auto rounded-xl h-[12rem] md:h-[24rem] lg:h-[27rem]"
       />
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-4 py-5 md:py-8 items-start">
+      <div className="grid grid-cols-2 gap-5 md:gap-0 md:grid-cols-4 py-5 md:py-8 items-start">
         <div className="text-center border-r">
           <div className="text-5xl md:text-6xl font-light uppercase text-primary">
             <AnimatedCounter from={0} to={5} />+

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Tabs } from "@/components/ui/tabs";
 import WebAppContent from "@/components/pages/services/web-app-content";
 import MobileAppContent from "@/components/pages/services/mobile-app-content";
@@ -54,13 +53,6 @@ export default function Services() {
       <div className="flex gap-5">
         <div className="space-y-5 relative">
           <h2 className="text-2xl md:text-3xl font-light uppercase">Our Services</h2>
-          <Image
-            src="/services-image.png"
-            alt="Service offered"
-            width={1000}
-            height={994}
-            className="w-20 h-auto md:hidden absolute right-5 -top-10"
-          />
           <div className="tracking-wide">
             At Bytecoup, we offer digital solutions designed to meet all your web, mobile, and desktop application
             needs. From concept to deployment, we work closely with you to understand your vision and objectives,
@@ -70,15 +62,8 @@ export default function Services() {
             growth.
           </div>
         </div>
-        <Image
-          src="/services-image.png"
-          alt="Service offered"
-          width={1000}
-          height={994}
-          className="w-40 h-auto hidden md:block"
-        />
       </div>
-      <div className="h-[80rem] md:h-[40rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start my-40">
+      <div className="h-[80rem] md:h-[54rem] lg:h-[40rem] [perspective:1000px] relative flex flex-col mx-auto w-full items-start justify-start my-40">
         <Tabs tabs={tabs} />
       </div>
       <div className="space-y-5">
