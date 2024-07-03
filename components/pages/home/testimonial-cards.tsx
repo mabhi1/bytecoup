@@ -14,7 +14,7 @@ export default function TestimonialCards({
       <CarouselPrevious />
       <CarouselContent>
         {items.map((item) => (
-          <CarouselItem key={item.title} className="md:basis-1/2 lg:basis-1/3">
+          <CarouselItem key={item.quote} className="md:basis-1/2 lg:basis-1/3">
             <div className="h-full bg-gradient-to-b from-blue-50 to-blue-100 dark:from-blue-700 dark:to-blue-900 rounded-2xl border border-b-0 border-blue-100 dark:border-blue-700 px-4 py-3">
               <blockquote>
                 <div

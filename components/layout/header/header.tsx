@@ -15,8 +15,8 @@ export default function Header() {
           </Link>
         </h1>
         <Navigation />
-        <MobileNavigation />
         <ModeToggle />
+        <MobileNavigation />
       </header>
     </StickyWrapper>
   );

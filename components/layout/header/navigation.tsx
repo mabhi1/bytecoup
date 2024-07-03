@@ -23,6 +23,7 @@ export default function Navigation() {
             isActive(link.href) && "text-primary underline"
           )}
         >
+          <link.icon className="w-5 mr-1" />
           {link.title}
         </Link>
       ))}

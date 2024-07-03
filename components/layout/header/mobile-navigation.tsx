@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator";
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetClose } from "@/components/ui/sheet";
 import { links } from "@/lib/strings/navigation-links";
 import { cn } from "@/lib/utils";
-import { Menu } from "lucide-react";
+import { Home, Menu } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -18,15 +18,15 @@ export default function MobileNavigation() {
     <Sheet>
       <SheetTrigger className="md:hidden" asChild>
         <Button variant="outline" size="icon">
-          <Menu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+          <Menu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
         </Button>
       </SheetTrigger>
       <SheetContent className="md:hidden">
         <SheetHeader>
-          <SheetTitle className="text-2xl font-light">Menu</SheetTitle>
+          <SheetTitle className="text-2xl font-thin">Menu</SheetTitle>
         </SheetHeader>
         <Separator className="my-5" />
-        <nav className="flex flex-col gap-5 md:hidden">
+        <nav className="flex flex-col gap-5 md:hidden w-fit">
           {links.map((link) => (
             <Link href={link.href} key={link.href}>
               <SheetClose>
@@ -36,6 +36,7 @@ export default function MobileNavigation() {
                     isActive(link.href) && "text-primary underline"
                   )}
                 >
+                  <link.icon className="w-5 mr-1" />
                   {link.title}
                 </span>
               </SheetClose>
