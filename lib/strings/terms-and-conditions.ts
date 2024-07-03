@@ -5,7 +5,7 @@ export const termsAndConditions = [
       {
         title: null,
         description:
-          "Welcome to [Your Company Name]! These Terms and Conditions outline the rules and regulations for the use of [Your Company Name]’s website and services. By accessing or using our website, you agree to comply with and be bound by these terms. If you disagree with any part of the terms, you may not use our website.",
+          "Welcome to Bytecoup! These Terms and Conditions outline the rules and regulations for the use of Bytecoup’s website and services. By accessing or using our website, you agree to comply with and be bound by these terms. If you disagree with any part of the terms, you may not use our website.",
       },
     ],
   },
@@ -49,7 +49,7 @@ export const termsAndConditions = [
       {
         title: "Services",
         description:
-          "[Your Company Name] offers a range of digital development services as detailed on our website. We reserve the right to modify or discontinue our services at any time without notice.",
+          "Bytecoup offers a range of digital development services as detailed on our website. We reserve the right to modify or discontinue our services at any time without notice.",
       },
       {
         title: "Fees",
@@ -69,7 +69,7 @@ export const termsAndConditions = [
       {
         title: "Ownership",
         description:
-          "The content, features, and functionality on our website, including but not limited to text, graphics, logos, and software, are owned by [Your Company Name] or its licensors and are protected by copyright, trademark, and other laws.",
+          "The content, features, and functionality on our website, including but not limited to text, graphics, logos, and software, are owned by Bytecoup or its licensors and are protected by copyright, trademark, and other laws.",
       },
       {
         title: "Restrictions",
@@ -107,7 +107,7 @@ export const termsAndConditions = [
       {
         title: "No Liability for Consequential Damages",
         description:
-          "To the maximum extent permitted by applicable law, in no event shall [Your Company Name] be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:",
+          "To the maximum extent permitted by applicable law, in no event shall Bytecoup be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:",
         list: [
           "Your use or inability to use the services.",
           "Any unauthorized access to or use of our servers and/or any personal information stored therein.",
@@ -117,7 +117,7 @@ export const termsAndConditions = [
       {
         title: "Aggregate Liability",
         description:
-          "In no event shall [Your Company Name]’s aggregate liability for all claims relating to the services exceed the amount you paid us, if any, for the past six months for the services.",
+          "In no event shall Bytecoup’s aggregate liability for all claims relating to the services exceed the amount you paid us, if any, for the past six months for the services.",
       },
     ],
   },
@@ -127,7 +127,7 @@ export const termsAndConditions = [
       {
         title: null,
         description:
-          "You agree to defend, indemnify, and hold harmless [Your Company Name], its affiliates, and their respective officers, directors, employees, agents, and representatives from and against any claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney’s fees) arising from:",
+          "You agree to defend, indemnify, and hold harmless Bytecoup, its affiliates, and their respective officers, directors, employees, agents, and representatives from and against any claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited to attorney’s fees) arising from:",
         list: [
           "Your use of and access to the services.",
           "Your violation of any term of these Terms.",
@@ -167,7 +167,7 @@ export const termsAndConditions = [
       {
         title: null,
         description:
-          "If you have any questions about these Terms, please contact us at:\n[Your Company Name]\n[Your Address]\n[City, State, ZIP Code]\nPhone: [Your Phone Number]\nEmail: [Your Email Address]",
+          "If you have any questions about these Terms, please contact us at:\nBytecoup\n[Your Address]\n[City, State, ZIP Code]\nPhone: [Your Phone Number]\nEmail: [Your Email Address]",
       },
     ],
   },

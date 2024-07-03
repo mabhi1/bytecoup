@@ -45,7 +45,7 @@ export default function HeroSection() {
         Creating Memorable Online Experiences That Help Your <span className="text-primary">Business</span> Stand Out.
       </div>
       <div className="w-[35%] hidden lg:block">
-        <Image src="/hero-image.webp" width={1920} height={1920} alt="Delite Solutions" />
+        <Image src="/hero-image.webp" width={1920} height={1920} alt="Bytecoup" />
       </div>
     </div>
   );

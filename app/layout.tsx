@@ -9,7 +9,7 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 const heebo = Heebo({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Delite Solutions",
+  title: "Bytecoup",
   description: "Expert web solutions for modern businesses",
 };
 

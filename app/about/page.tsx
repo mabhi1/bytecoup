@@ -10,7 +10,7 @@ export default function About() {
     <MotionDiv direction="btot" className="py-16 space-y-5">
       <Image
         src="/office-space.webp"
-        alt="Delite"
+        alt="bytecoup"
         height={2880}
         width={1622}
         className="w-full max-w-3xl mx-auto rounded-xl h-[27rem]"
@@ -43,7 +43,7 @@ export default function About() {
       </div>
       <div className="text-2xl font-light pt-10">Empowering Businesses Through Innovative Digital Solutions</div>
       <div>
-        Welcome to Delite, where we transform your business vision into reality through our comprehensive range of
+        Welcome to Bytecoup, where we transform your business vision into reality through our comprehensive range of
         development and marketing services. We are dedicated to delivering exceptional digital solutions that drive
         growth, enhance engagement, and create lasting value for your business. Our expertise spans web, mobile, and
         desktop application development, alongside cutting-edge chatbot development, SEO, digital marketing, and

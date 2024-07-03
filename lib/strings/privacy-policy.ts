@@ -5,7 +5,7 @@ export const privacyPolicies = [
       {
         title: null,
         description:
-          "At [Your Company Name], we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By accessing or using our services, you agree to the terms of this Privacy Policy.",
+          "At Bytecoup, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, disclose, and safeguard your information when you visit our website or use our services. By accessing or using our services, you agree to the terms of this Privacy Policy.",
       },
     ],
   },
@@ -145,7 +145,7 @@ export const privacyPolicies = [
       {
         title: null,
         description:
-          "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:\n[Your Company Name]\n[Your Address]\n[City, State, ZIP Code]\nPhone: [Your Phone Number]\nEmail: [Your Email Address]",
+          "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at:\nBytecoup\n[Your Address]\n[City, State, ZIP Code]\nPhone: [Your Phone Number]\nEmail: [Your Email Address]",
       },
     ],
   },

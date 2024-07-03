@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="py-12 px-20 border-t grid grid-cols-2 md:grid-cols-4 gap-16">
       <div className="flex flex-col gap-5 col-span-2">
         <div>
-          <div className="uppercase text-lg font-medium">Delite Solutions</div>
+          <div className="uppercase text-lg font-medium">Bytecoup</div>
           <div className="text-muted-foreground text-sm">Expert web solutions for modern businesses</div>
         </div>
         <div className="text-sm">
@@ -15,7 +15,7 @@ export default function Footer() {
           support your digital success. Trust us to transform your vision into an engaging and scalable online presence.
         </div>
         <div className="text-muted-foreground text-sm">
-          © 2024 Delite Solutions |{" "}
+          © 2024 Bytecoup |{" "}
           <Button variant="link" className="p-0 text-sm text-primary/80" asChild>
             <Link href="/terms&conditions">Terms and Conditions</Link>
           </Button>{" "}
@@ -54,7 +54,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-1">
             <MailIcon className="w-4" />
-            demoemail@delite.com
+            demoemail@bytecoup.com
           </div>
           <div className="flex gap-1">
             <MapPinIcon className="w-4" /> 123 First Floor, Second Street, New Delhi 110092

@@ -55,11 +55,12 @@ export default function Services() {
         <div className="space-y-5">
           <h2 className="text-3xl font-light uppercase">Our Services</h2>
           <div className="tracking-wide">
-            At Delite, we offer digital solutions designed to meet all your web, mobile, and desktop application needs.
-            From concept to deployment, we work closely with you to understand your vision and objectives, creating
-            solutions that are not only visually stunning but also highly functional. Our commitment to and attention to
-            detail guarantee that your digital presence will engage your audience. Explore our services and discover how
-            we can transform your ideas into reality, driving your business towards greater success and growth.
+            At Bytecoup, we offer digital solutions designed to meet all your web, mobile, and desktop application
+            needs. From concept to deployment, we work closely with you to understand your vision and objectives,
+            creating solutions that are not only visually stunning but also highly functional. Our commitment to and
+            attention to detail guarantee that your digital presence will engage your audience. Explore our services and
+            discover how we can transform your ideas into reality, driving your business towards greater success and
+            growth.
           </div>
         </div>
         <Image src="/services-image.png" alt="Service offered" width={1000} height={994} className="w-40 h-auto" />
