@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={cn(heebo.className, "flex flex-col min-h-screen tracking-wide")}>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Header />
           <main className="flex-1 w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
           <Footer />

@@ -41,7 +41,7 @@ export default function HeroSection() {
           </Button>
         </div>
       </div>
-      <div className="my-28 md:hidden bg-gradient-to-b from-slate-500 to-slate-400 dark:from-slate-400 dark:to-slate-500 bg-clip-text text-5xl font-medium tracking-tight text-transparent">
+      <div className="my-16 md:hidden text-5xl font-light tracking-tight text-center">
         Creating Memorable Online Experiences That Help Your <span className="text-primary">Business</span> Stand Out.
       </div>
       <div className="w-[35%] hidden lg:block">

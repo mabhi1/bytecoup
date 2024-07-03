@@ -22,7 +22,7 @@ export default function ReasonCards({
       {items.map((item, idx) => (
         <div
           key={item?.title}
-          className="relative group block p-2 h-full w-full"
+          className="relative group block p-2 h-full w-full last:hidden lg:last:block"
           onMouseEnter={() => setHoveredIndex(idx)}
           onMouseLeave={() => setHoveredIndex(null)}
         >
@@ -45,7 +45,7 @@ export default function ReasonCards({
           </AnimatePresence>
           <Card>
             <CardTitle className="flex gap-2">
-              <BadgeCheckIcon className="w-6 text-green-400" />
+              <BadgeCheckIcon className="w-6 text-green-400 hidden md:block" />
               {item.title}
             </CardTitle>
             <CardDescription>{item.description}</CardDescription>
@@ -60,19 +60,19 @@ export const Card = ({ className, children }: { className?: string; children: Re
   return (
     <div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-background border border-black/[0.2] dark:border-white/[0.2] group-hover:border-slate-300 dark:group-hover:border-slate-700 relative z-20",
+        "rounded-2xl h-full w-full p-2 md:p-4 overflow-hidden bg-background border border-black/[0.2] dark:border-white/[0.2] group-hover:border-slate-300 dark:group-hover:border-slate-700 relative z-20",
         className
       )}
     >
       <div className="relative z-50">
-        <div className="p-4">{children}</div>
+        <div className="p-2 md:p-4">{children}</div>
       </div>
     </div>
   );
 };
 export const CardTitle = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-  return <h4 className={cn("font-medium tracking-wide mt-4", className)}>{children}</h4>;
+  return <h4 className={cn("font-medium tracking-wide mt-2 md:mt-4", className)}>{children}</h4>;
 };
 export const CardDescription = ({ className, children }: { className?: string; children: React.ReactNode }) => {
-  return <p className={cn("mt-8 tracking-wide leading-relaxed text-sm", className)}>{children}</p>;
+  return <p className={cn("mt-2 md:mt-8 tracking-wide leading-relaxed text-sm", className)}>{children}</p>;
 };

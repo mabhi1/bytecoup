@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-20 border-t grid grid-cols-2 md:grid-cols-4 gap-16">
-      <div className="flex flex-col gap-5 col-span-2">
+    <footer className="px-5 py-12 md:px-8 lg:px-20 border-t grid grid-cols-3 md:grid-cols-6 gap-5 lg:gap-16">
+      <div className="flex flex-col gap-3 md:gap-5 col-span-3 md:col-span-3">
         <div>
           <div className="uppercase text-lg font-medium">Bytecoup</div>
           <div className="text-muted-foreground text-sm">Expert web solutions for modern businesses</div>
@@ -45,19 +45,20 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-5">
+      <div className="flex flex-col gap-5 col-span-2">
         <div className="uppercase text-lg font-medium">Contact Us</div>
         <div className="flex flex-col gap-1 text-sm">
           <div className="flex gap-1">
             <PhoneIcon className="w-4" />
-            012-345678
+            <span className="w-fit">012-345678</span>
           </div>
           <div className="flex gap-1">
             <MailIcon className="w-4" />
-            demoemail@bytecoup.com
+            <span className="w-fit">demoemail@bytecoup.com</span>
           </div>
           <div className="flex gap-1">
-            <MapPinIcon className="w-4" /> 123 First Floor, Second Street, New Delhi 110092
+            <MapPinIcon className="w-4" />{" "}
+            <span className="w-fit">123 First Floor, Second Street, New Delhi 110092</span>
           </div>
         </div>
       </div>
