@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Careers() {
   return (
-    <div className="py-16">
-      <div className="text-3xl font-light uppercase">Work with us</div>
+    <div className="py-10 md:py-16">
+      <div className="text-2xl md:text-3xl font-light uppercase">Work with us</div>
       <div>
         Share your resume along with a little bit about yourself using the form below. We will reach out to you if you
         are a good fit to the team.

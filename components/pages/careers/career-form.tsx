@@ -18,7 +18,7 @@ export function CareerForm() {
 
   return (
     <form
-      className="my-8 max-w-lg w-full border p-12 rounded-2xl bg-white/50 dark:bg-black/50 backdrop-blur"
+      className="my-8 max-w-lg w-full border p-5 md:p-12 rounded-2xl bg-white/50 dark:bg-black/50 backdrop-blur"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
