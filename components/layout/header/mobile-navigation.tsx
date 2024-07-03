@@ -21,12 +21,11 @@ export default function MobileNavigation() {
           <Menu className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all" />
         </Button>
       </SheetTrigger>
-      <SheetContent className="md:hidden">
+      <SheetContent className="md:hidden p-0">
         <SheetHeader>
-          <SheetTitle className="text-2xl font-thin">Menu</SheetTitle>
+          <SheetTitle className="text-2xl font-extralight border-b p-5 bg-blue-50">Menu</SheetTitle>
         </SheetHeader>
-        <Separator className="my-5" />
-        <nav className="flex flex-col gap-5 md:hidden w-fit">
+        <nav className="flex flex-col gap-5 md:hidden w-fit p-5">
           {links.map((link) => (
             <Link href={link.href} key={link.href}>
               <SheetClose>
