@@ -3,33 +3,10 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { ModeToggle } from "@/components/ui/mode-toggle";
+import { links } from "@/lib/strings/navigation-links";
 
 export default function Navigation() {
   const pathname = usePathname();
-
-  const links = [
-    {
-      title: "home",
-      href: "/",
-    },
-    {
-      title: "services",
-      href: "/services",
-    },
-    {
-      title: "work",
-      href: "/work",
-    },
-    {
-      title: "about",
-      href: "/about",
-    },
-    {
-      title: "contact",
-      href: "/contact",
-    },
-  ];
 
   const isActive = (currentPath: string) => {
     return pathname === currentPath;
@@ -49,7 +26,6 @@ export default function Navigation() {
           {link.title}
         </Link>
       ))}
-      <ModeToggle />
     </nav>
   );
 }
