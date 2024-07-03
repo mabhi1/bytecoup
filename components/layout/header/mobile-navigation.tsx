@@ -23,19 +23,20 @@ export default function MobileNavigation() {
       </SheetTrigger>
       <SheetContent className="md:hidden p-0">
         <SheetHeader>
-          <SheetTitle className="text-2xl font-extralight border-b p-5 bg-blue-50">Menu</SheetTitle>
+          <SheetTitle className="text-2xl font-extralight p-4">Menu</SheetTitle>
         </SheetHeader>
-        <nav className="flex flex-col gap-5 md:hidden w-fit p-5">
+        <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent h-[1px] w-full" />
+        <nav className="flex flex-col gap-5 md:hidden w-fit p-5 mt-4">
           {links.map((link) => (
             <Link href={link.href} key={link.href}>
               <SheetClose>
                 <span
                   className={cn(
-                    "flex items-center capitalize z-10 hover:underline underline-offset-4 hover:text-primary",
+                    "flex gap-2 ml-2 items-center capitalize z-10 hover:underline underline-offset-4 hover:text-primary",
                     isActive(link.href) && "text-primary underline"
                   )}
                 >
-                  <link.icon className="w-5 mr-1" />
+                  <link.icon className="w-5" />
                   {link.title}
                 </span>
               </SheetClose>

@@ -55,7 +55,13 @@ export function ContactForm() {
         </Button>
       </form>
       <MotionDiv direction="rtol">
-        <Image src="/contact-us.webp" width={675} height={450} alt="Contact Us" className="w-[35rem] h-auto" />
+        <Image
+          src="/contact-us.webp"
+          width={675}
+          height={450}
+          alt="Contact Us"
+          className="w-[35rem] h-auto hidden md:block"
+        />
       </MotionDiv>
     </div>
   );
