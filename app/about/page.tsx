@@ -7,41 +7,43 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <MotionDiv direction="btot" className="py-16 space-y-5">
+    <MotionDiv direction="btot" className="py-10 md:py-16 space-y-5">
       <Image
         src="/office-space.webp"
         alt="bytecoup"
         height={2880}
         width={1622}
-        className="w-full max-w-3xl mx-auto rounded-xl h-[27rem]"
+        className="w-full max-w-3xl mx-auto rounded-xl h-[12rem] md:h-[27rem]"
       />
-      <div className="grid grid-cols-4 py-8">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-4 py-5 md:py-8 items-start">
         <div className="text-center border-r">
-          <div className="text-6xl font-light uppercase text-primary">
+          <div className="text-5xl md:text-6xl font-light uppercase text-primary">
             <AnimatedCounter from={0} to={5} />+
           </div>
-          <div className="text-2xl font-light">Years Experience</div>
+          <div className="text-xl md:text-2xl font-light w-24 md:w-auto mx-auto">Years Experience</div>
         </div>
-        <div className="text-center border-r">
-          <div className="text-6xl font-light uppercase text-primary">
+        <div className="text-center md:border-r">
+          <div className="text-5xl md:text-6xl font-light uppercase text-primary">
             <AnimatedCounter from={40} to={50} />+
           </div>
-          <div className="text-2xl font-light">Clients</div>
+          <div className="text-xl md:text-2xl font-light">Clients</div>
         </div>
         <div className="text-center border-r">
-          <div className="text-6xl font-light uppercase text-primary">
+          <div className="text-5xl md:text-6xl font-light uppercase text-primary">
             <AnimatedCounter from={130} to={150} />+
           </div>
-          <div className="text-2xl font-light">Projects</div>
+          <div className="text-xl md:text-2xl font-light">Projects</div>
         </div>
         <div className="text-center">
-          <div className="text-6xl font-light uppercase text-primary">
+          <div className="text-5xl md:text-6xl font-light uppercase text-primary">
             <AnimatedCounter from={40} to={50} />+
           </div>
-          <div className="text-2xl font-light">People</div>
+          <div className="text-xl md:text-2xl font-light">People</div>
         </div>
       </div>
-      <div className="text-2xl font-light pt-10">Empowering Businesses Through Innovative Digital Solutions</div>
+      <div className="text-lg md:text-2xl font-light pt-5 md:pt-10">
+        Empowering Businesses Through Innovative Digital Solutions
+      </div>
       <div>
         Welcome to Bytecoup, where we transform your business vision into reality through our comprehensive range of
         development and marketing services. We are dedicated to delivering exceptional digital solutions that drive
@@ -49,13 +51,13 @@ export default function About() {
         desktop application development, alongside cutting-edge chatbot development, SEO, digital marketing, and
         branding services.
       </div>
-      <div className="text-3xl font-light uppercase pt-10">Our Mission</div>
+      <div className="text-2xl md:text-3xl font-light uppercase pt-5 md:pt-10">Our Mission</div>
       <div>
         Our mission is to harness the power of technology to deliver exceptional digital solutions that drive success
         for businesses of all sizes. We are dedicated to understanding your unique needs and providing personalized
         service that ensures your digital transformation is seamless, effective, and aligned with your goals.
       </div>
-      <div className="text-3xl font-light uppercase pt-10">Why Choose Us?</div>
+      <div className="text-2xl md:text-3xl font-light uppercase pt-5 md:pt-10">Why Choose Us?</div>
       <ul className="space-y-2">
         <li>
           Expertise Across Platforms:{" "}
@@ -97,7 +99,7 @@ export default function About() {
           </span>
         </li>
       </ul>
-      <div className="text-3xl font-light uppercase pt-10">Our Values</div>
+      <div className="text-2xl md:text-3xl font-light uppercase pt-5 md:pt-10">Our Values</div>
       <ul className="space-y-2">
         <li>
           Innovation:{" "}
@@ -120,7 +122,7 @@ export default function About() {
           </span>
         </li>
       </ul>
-      <div className="text-3xl font-light uppercase pt-10">Get in Touch</div>
+      <div className="text-2xl md:text-3xl font-light uppercase pt-5 md:pt-10">Get in Touch</div>
       <div>
         Ready to transform your business with innovative digital solutions? Contact us today to discuss how we can help
         you achieve your goals and unlock new opportunities in the digital age.
