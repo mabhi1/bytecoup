@@ -16,11 +16,11 @@ export default function Footer() {
         </div>
         <div className="text-muted-foreground text-sm">
           © 2024 Bytecoup |{" "}
-          <Button variant="link" className="p-0 text-sm text-primary/80" asChild>
+          <Button variant="link" className="p-0 text-sm text-primary/80 h-fit" asChild>
             <Link href="/terms&conditions">Terms and Conditions</Link>
           </Button>{" "}
           |{" "}
-          <Button variant="link" className="p-0 text-sm text-primary/80" asChild>
+          <Button variant="link" className="p-0 text-sm text-primary/80 h-fit" asChild>
             <Link href="/privacy">Privacy Policy</Link>
           </Button>{" "}
         </div>

@@ -85,11 +85,11 @@ export default function Services() {
         <div className="text-2xl md:text-3xl font-light uppercase pt-20">Any questions?</div>
         <div>
           Found something you want or have any question? You can reach out to us on{" "}
-          <Button variant="link" className="p-0" asChild>
+          <Button variant="link" className="p-0 text-sm md:text-base h-fit" asChild>
             <Link href="/contact">contact page.</Link>
           </Button>{" "}
           You can also visit our{" "}
-          <Button variant="link" className="p-0" asChild>
+          <Button variant="link" className="p-0 text-sm md:text-base h-fit" asChild>
             <Link href="/faq">FAQs</Link>
           </Button>{" "}
           section for commonly asked questions about our services.
