@@ -1,13 +1,11 @@
 import { termsAndConditions } from "@/lib/strings/terms-and-conditions";
-import { SwatchBookIcon } from "lucide-react";
 
 export default function TermsAndConditions() {
   return (
-    <div className="py-16 space-y-8">
+    <div className="py-10 md:py-16 space-y-5 md:space-y-8">
       {termsAndConditions.map((term) => (
         <div key={term.heading} className="space-y-2">
-          <div className="text-2xl font-light uppercase flex items-center gap-1">
-            <SwatchBookIcon className="w-5" />
+          <div className="text-xl md:text-2xl font-light uppercase flex items-center gap-1 underline underline-offset-4">
             {term.heading}
           </div>
           {term.termsAndConditions.map((condition) => (
