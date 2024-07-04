@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { common } from "@/lib/strings/common";
 import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
@@ -50,15 +51,14 @@ export default function Footer() {
         <div className="flex flex-col gap-1 text-sm">
           <div className="flex gap-1">
             <PhoneIcon className="w-4" />
-            <span className="w-fit">012-345678</span>
+            <span className="w-fit">{common.phone.india}</span>
           </div>
           <div className="flex gap-1">
             <MailIcon className="w-4" />
-            <span className="w-fit">demoemail@bytecoup.com</span>
+            <span className="w-fit">{common.emails.default}</span>
           </div>
           <div className="flex gap-1">
-            <MapPinIcon className="w-4" />{" "}
-            <span className="w-fit">123 First Floor, Second Street, New Delhi 110092</span>
+            <MapPinIcon className="w-4" /> <span className="w-fit">{common.address.india}</span>
           </div>
         </div>
       </div>
