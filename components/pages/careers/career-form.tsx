@@ -41,8 +41,8 @@ export function CareerForm() {
     }
     startTransition(async () => {
       try {
-        const success = verifyRecaptcha(reCaptcha);
-        if (!success) return;
+        // const success = verifyRecaptcha(reCaptcha);
+        // if (!success) return;
         const { data, error } = await createCareerAction(values);
         if (error || !data) toast.error("Error in sending application");
         else {
