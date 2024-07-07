@@ -138,7 +138,7 @@ export function ContactForm() {
             />
             <Label htmlFor="terms">
               Accept{" "}
-              <Button variant="link" className="p-0 text-sm md:text-base h-fit" asChild>
+              <Button variant="link" className="p-0 text-sm h-fit" asChild>
                 <Link href="/terms&conditions">terms and conditions.</Link>
               </Button>{" "}
             </Label>

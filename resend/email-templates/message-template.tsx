@@ -17,8 +17,8 @@ export const MessageTemplate: React.FC<Readonly<EmailTemplateProps>> = ({ sender
       </p>
       <p style={{ marginTop: "1.25rem", marginBottom: "1.25rem" }}>{message}</p>
       <p>Thanks&#44;</p>
-      <img src="https://www.bytecoup.com/logo-small.png" alt="Bytecoup" style={{ width: "50px", aspectRatio: "1/1" }} />
-      <p>Bytecoup team</p>
+      <img src="https://www.bytecoup.com/logo-small.png" alt="Bytecoup" style={{ width: "30px", aspectRatio: "1/1" }} />
+      <div>Bytecoup team</div>
     </div>
   );
 };
