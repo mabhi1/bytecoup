@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createRef, useEffect, useState, useTransition } from "react";
+import React, { useState, useTransition } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -14,31 +14,31 @@ import * as z from "zod";
 import { careersSchema } from "@/schema/careers-schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem, FormMessage } from "@/components/ui/form";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "sonner";
-import { verifyRecaptcha } from "@/actions/recaptcha";
+// import { verifyRecaptcha } from "@/actions/recaptcha";
 import { createCareerAction } from "@/actions/careers-actions";
 
 export function CareerForm() {
   const [isPending, startTransition] = useTransition();
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [termsError, setTermsError] = useState(false);
-  const [reCaptcha, setReCaptcha] = useState<string | null>();
-  const reCaptchaRef = createRef<ReCAPTCHA>();
+  // const [reCaptcha, setReCaptcha] = useState<string | null>();
+  // const reCaptchaRef = createRef<ReCAPTCHA>();
 
-  useEffect(() => {
-    if (reCaptcha === null) reCaptchaRef.current?.reset();
-  }, [reCaptcha, reCaptchaRef]);
+  // useEffect(() => {
+  //   if (reCaptcha === null) reCaptchaRef.current?.reset();
+  // }, [reCaptcha, reCaptchaRef]);
 
   const handleFormSubmit = (values: z.infer<typeof careersSchema>) => {
     if (!acceptTerms) {
       setTermsError(true);
       return;
     }
-    if (!reCaptcha) {
-      toast.error("Please verify to continue");
-      return;
-    }
+    // if (!reCaptcha) {
+    //   toast.error("Please verify to continue");
+    //   return;
+    // }
     startTransition(async () => {
       try {
         // const success = verifyRecaptcha(reCaptcha);
@@ -50,7 +50,7 @@ export function CareerForm() {
           toast.success("Application sent successfully");
           form.reset();
           setAcceptTerms(false);
-          setReCaptcha(null);
+          // setReCaptcha(null);
         }
       } catch (error) {
         console.log("errorrrr", error);
@@ -155,14 +155,14 @@ export function CareerForm() {
           </Label>
           {termsError && <div className="text-sm font-medium text-destructive">Required</div>}
         </LabelInputContainer>
-        <ReCAPTCHA
+        {/* <ReCAPTCHA
           sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY!}
           onChange={setReCaptcha}
           ref={reCaptchaRef}
           className="mx-auto mb-4"
           onExpired={() => setReCaptcha(null)}
           onErrored={() => setReCaptcha(null)}
-        />
+        /> */}
 
         {!isPending ? (
           <Button type="submit" className="w-full">
