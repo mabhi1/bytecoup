@@ -12,6 +12,6 @@ export async function createMessageAction(values: z.infer<typeof messageSchema>)
 
   const createdMessage = await createMessage(parsedSchema.data);
   const { data, error } = await sendMessageEmail(values);
-  if (error || createdMessage.error) return { data: null, error };
+  if (error || createdMessage.error) return { data: null, error: error || createdMessage.error };
   return createdMessage;
 }
