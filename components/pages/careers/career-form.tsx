@@ -44,7 +44,6 @@ export function CareerForm() {
         const success = verifyRecaptcha(reCaptcha);
         if (!success) return;
         const { data, error } = await createCareerAction(values);
-        console.log("data-error", data, error);
         if (error || !data) toast.error("Error in sending application");
         else {
           toast.success("Application sent successfully");
@@ -53,7 +52,6 @@ export function CareerForm() {
           setReCaptcha(null);
         }
       } catch (error) {
-        console.log("errorrrr", error);
         toast.error("Error in sending application");
       }
     });

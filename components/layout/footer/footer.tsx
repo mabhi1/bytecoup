@@ -49,15 +49,15 @@ export default function Footer() {
       <div className="flex flex-col gap-5 col-span-2">
         <div className="uppercase text-lg font-medium">Contact Us</div>
         <div className="flex flex-col gap-1 text-sm">
-          <div className="flex gap-1">
+          <div className="flex gap-1 items-center">
             <PhoneIcon className="w-4" />
             <span className="w-fit">{common.phone.india}</span>
           </div>
-          <div className="flex gap-1">
+          <div className="flex gap-1 items-center">
             <MailIcon className="w-4" />
             <span className="w-fit">{common.emails.default}</span>
           </div>
-          <div className="flex gap-1">
+          <div className="flex gap-1 items-center">
             <MapPinIcon className="w-4" /> <span className="w-fit">{common.address.india}</span>
           </div>
         </div>

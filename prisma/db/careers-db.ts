@@ -6,7 +6,6 @@ export async function createCareer(career: NewCareersDbType) {
     const createdCareer = await prisma.career.create({ data: career });
     return { data: createdCareer, error: null };
   } catch (error) {
-    console.log(error);
     return { data: null, error };
   }
 }
