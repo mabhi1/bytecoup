@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createRef, useEffect, useState, useTransition } from "react";
+import React, { ChangeEvent, createRef, useEffect, useState, useTransition } from "react";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
@@ -17,18 +17,28 @@ import { Form, FormControl, FormField, FormItem, FormMessage } from "@/component
 import ReCAPTCHA from "react-google-recaptcha";
 import { toast } from "sonner";
 import { verifyRecaptcha } from "@/actions/recaptcha";
+import pdfToText from "react-pdftotext";
 import { createCareerAction } from "@/actions/careers-actions";
 
 export function CareerForm() {
   const [isPending, startTransition] = useTransition();
   const [acceptTerms, setAcceptTerms] = useState(false);
   const [termsError, setTermsError] = useState(false);
+  const [resumeText, setResumeText] = useState("");
   const [reCaptcha, setReCaptcha] = useState<string | null>();
   const reCaptchaRef = createRef<ReCAPTCHA>();
 
   useEffect(() => {
     if (reCaptcha === null) reCaptchaRef.current?.reset();
   }, [reCaptcha, reCaptchaRef]);
+
+  const extractText = (event: ChangeEvent<HTMLInputElement>) => {
+    if (!event.target.files) return;
+    const file = event.target.files[0];
+    pdfToText(file)
+      .then((text: string) => setResumeText(text))
+      .catch((error: any) => console.error("Failed to upload pdf", error));
+  };
 
   const handleFormSubmit = (values: z.infer<typeof careersSchema>) => {
     if (!acceptTerms) {
@@ -43,10 +53,11 @@ export function CareerForm() {
       try {
         const success = verifyRecaptcha(reCaptcha);
         if (!success) return;
-        const { data, error } = await createCareerAction(values);
+        const { data, error } = await createCareerAction(values, resumeText);
         if (error || !data) toast.error("Error in sending application");
         else {
           toast.success("Application sent successfully");
+          (document.getElementById("resume")! as HTMLInputElement).value = "";
           form.reset();
           setAcceptTerms(false);
           setReCaptcha(null);
@@ -134,7 +145,7 @@ export function CareerForm() {
         />
         <LabelInputContainer className="mb-4 space-y-2">
           <Label htmlFor="resume">Upload resume</Label>
-          <Input id="resume" type="file" accept="application/pdf" name="resume" />
+          <Input id="resume" type="file" accept="application/pdf" name="resume" onChange={extractText} />
         </LabelInputContainer>
         <LabelInputContainer className="mb-4 flex-row items-center gap-2 space-y-1">
           <Checkbox

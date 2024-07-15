@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/pages/contact/contact-form";
 import { Button } from "@/components/ui/button";
 import MotionDiv from "@/components/ui/motion-div";
 import { common } from "@/lib/strings/common";
-import { MailboxIcon, MailIcon, PhoneCallIcon } from "lucide-react";
+import { CalendarClockIcon, MailboxIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactUs() {
@@ -36,21 +36,25 @@ export default function ContactUs() {
           <p className="mt-3 flex gap-2 items-center">
             <MailboxIcon className="w-5" /> <span>{common.address.india}</span>
           </p>
-          <div className="text-lg md:text-xl md:font-light mt-5 md:mt-8">Business Hours:</div>
-          <p className="mt-3 flex gap-2 flex-col">
-            <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
-            <span>Saturday: 10:00 AM - 2:00 PM</span>
-            <span>Sunday: Closed</span>
+          <p className="mt-3 flex gap-2 items-center">
+            <CalendarClockIcon className="w-5" /> <span>Business Hours:</span>
           </p>
+          <ul className="mt-3 flex gap-2 flex-col">
+            <li className="pl-7">Monday - Friday: 9:00 AM - 6:00 PM</li>
+            <li className="pl-7">Saturday: 10:00 AM - 2:00 PM</li>
+            <li className="pl-7">Sunday: Closed</li>
+          </ul>
         </div>
         <div>
           <div className="text-lg md:text-xl md:font-light mt-5 md:mt-0">Follow Us</div>
           <p className="mt-3 flex gap-2 flex-col">
             Stay connected and follow us on social media for the latest updates, news, and insights from Bytecoup.
-            <span>Facebook: [Facebook URL]</span>
-            <span>Twitter: [Twitter URL]</span>
-            <span>LinkedIn: [LinkedIn URL]</span>
-            <span>Instagram: [Instagram URL]</span>
+            <ul className="mt-3 flex gap-2 flex-col">
+              <li>Facebook: [Facebook URL]</li>
+              <li>Twitter: [Twitter URL]</li>
+              <li>LinkedIn: [LinkedIn URL]</li>
+              <li>Instagram: [Instagram URL]</li>
+            </ul>
           </p>
         </div>
       </div>
