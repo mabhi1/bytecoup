@@ -58,6 +58,7 @@ export function CareerForm() {
         else {
           toast.success("Application sent successfully");
           (document.getElementById("resume")! as HTMLInputElement).value = "";
+          setResumeText("");
           form.reset();
           setAcceptTerms(false);
           setReCaptcha(null);
