@@ -32,3 +32,19 @@ model Career {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 }
+
+model Testimonial {
+  id                  String  @id @default(auto()) @map("_id") @db.ObjectId
+  name                String
+  companyName         String
+  website             String?
+  designation         String
+  email               String
+  phone               String?
+  overallSatisfaction Int
+  feedback            String
+  expectationMet      Boolean @default(true)
+  suggestions         String?
+  reConsider          Boolean @default(true)
+  publishable         Boolean
+}

@@ -91,7 +91,9 @@ export function CareerForm() {
             name="firstName"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <Label htmlFor="firstname">First name</Label>
+                <Label htmlFor="firstname">
+                  First name<span className="text-destructive dark:text-red-300">*</span>
+                </Label>
                 <FormControl>
                   <Input {...field} id="firstname" placeholder="Tyler" type="text" />
                 </FormControl>
@@ -104,7 +106,9 @@ export function CareerForm() {
             name="lastName"
             render={({ field }) => (
               <FormItem className="flex-1">
-                <Label htmlFor="lastName">Last name</Label>
+                <Label htmlFor="lastName">
+                  Last name<span className="text-destructive dark:text-red-300">*</span>
+                </Label>
                 <FormControl>
                   <Input {...field} id="lastname" placeholder="Durden" type="text" />
                 </FormControl>
@@ -118,7 +122,9 @@ export function CareerForm() {
           name="email"
           render={({ field }) => (
             <FormItem className="mb-4">
-              <Label htmlFor="email">Email Address</Label>
+              <Label htmlFor="email">
+                Email Address<span className="text-destructive dark:text-red-300">*</span>
+              </Label>
               <FormControl>
                 <Input {...field} id="email" placeholder="projectmayhem@fc.com" type="email" />
               </FormControl>
@@ -131,7 +137,10 @@ export function CareerForm() {
           name="message"
           render={({ field }) => (
             <FormItem className="mb-4">
-              <Label htmlFor="message">Briefly describe yourself and technologies you have worked in.</Label>
+              <Label htmlFor="message">
+                Describe yourself and technologies you have worked in.
+                <span className="text-destructive dark:text-red-300">*</span>
+              </Label>
               <FormControl>
                 <Textarea
                   {...field}
@@ -160,7 +169,9 @@ export function CareerForm() {
           <Label htmlFor="terms">
             Accept{" "}
             <Button variant="link" className="p-0 text-sm h-fit" asChild>
-              <Link href="/terms&conditions">terms and conditions.</Link>
+              <Link href="/terms&conditions">
+                terms and conditions.<span className="text-destructive dark:text-red-300">*</span>
+              </Link>
             </Button>{" "}
           </Label>
           {termsError && <div className="text-sm font-medium text-destructive">Required</div>}
