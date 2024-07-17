@@ -2,7 +2,7 @@ import { ContactForm } from "@/components/pages/contact/contact-form";
 import { Button } from "@/components/ui/button";
 import MotionDiv from "@/components/ui/motion-div";
 import { common } from "@/lib/strings/common";
-import { CalendarClockIcon, MailboxIcon, MailIcon, PhoneCallIcon } from "lucide-react";
+import { CalendarClockIcon, ExternalLink, MailboxIcon, MailIcon, PhoneCallIcon } from "lucide-react";
 import Link from "next/link";
 
 export default function ContactUs() {
@@ -47,15 +47,35 @@ export default function ContactUs() {
         </div>
         <div>
           <div className="text-lg md:text-xl md:font-light mt-5 md:mt-0">Follow Us</div>
-          <p className="mt-3 flex gap-2 flex-col">
+          <div className="mt-3 flex gap-2 flex-col">
             Stay connected and follow us on social media for the latest updates, news, and insights from Bytecoup.
             <ul className="mt-3 flex gap-2 flex-col">
-              <li>Facebook: [Facebook URL]</li>
-              <li>Twitter: [Twitter URL]</li>
-              <li>LinkedIn: [LinkedIn URL]</li>
-              <li>Instagram: [Instagram URL]</li>
+              <li>
+                <Button variant="link" className="p-0 text-sm h-fit text-black dark:text-white" asChild>
+                  <Link href="https://x.com/ByteCoup/" target="_blank">
+                    X(formerly Twitter)
+                    <ExternalLink className="w-4 ml-1" />
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button variant="link" className="p-0 text-sm h-fit text-black dark:text-white" asChild>
+                  <Link href="https://www.linkedin.com/company/bytecoup/about/" target="_blank">
+                    LinkedIn
+                    <ExternalLink className="w-4 ml-1" />
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button variant="link" className="p-0 text-sm h-fit text-black dark:text-white" asChild>
+                  <Link href="https://www.instagram.com/bytecoup/" target="_blank">
+                    Instagram
+                    <ExternalLink className="w-4 ml-1" />
+                  </Link>
+                </Button>
+              </li>
             </ul>
-          </p>
+          </div>
         </div>
       </div>
       <div className="bg-gradient-to-r from-transparent via-neutral-700 to-transparent my-8 h-[1px] w-full" />
