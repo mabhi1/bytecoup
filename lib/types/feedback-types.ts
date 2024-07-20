@@ -11,6 +11,7 @@ type NewFeedbackDbType = {
   suggestions?: string;
   reConsider: boolean;
   publishable: boolean;
+  showOnSite: boolean;
   tokenId: string;
 };
 
