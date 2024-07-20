@@ -11,10 +11,10 @@ export async function createFeedbackAction(values: z.infer<typeof feedbackSchema
 
   if (!parsedSchema) return { data: null, error: "Invalid Fields" };
 
-  const createdFeedback = await createFeedback(values);
+  const createdFeedback = await createFeedback({ ...values, tokenId });
 
   if (createdFeedback.data && !createdFeedback.error) {
-    await closeFeedbackTokenById(tokenId);
+    await closeFeedbackTokenById(tokenId, createdFeedback.data.id);
   }
   revalidatePath(`/feedback/${tokenId}`);
   return createdFeedback;

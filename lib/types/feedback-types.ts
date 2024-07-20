@@ -11,6 +11,7 @@ type NewFeedbackDbType = {
   suggestions?: string;
   reConsider: boolean;
   publishable: boolean;
+  tokenId: string;
 };
 
 export type { NewFeedbackDbType };

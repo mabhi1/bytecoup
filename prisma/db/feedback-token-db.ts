@@ -10,9 +10,9 @@ export async function getFeedbackTokenById(id: string) {
   }
 }
 
-export async function closeFeedbackTokenById(id: string) {
+export async function closeFeedbackTokenById(id: string, feedbackId: string) {
   try {
-    const token = await prisma.feedbackToken.update({ where: { id }, data: { status: "closed" } });
+    const token = await prisma.feedbackToken.update({ where: { id }, data: { status: "closed", feedbackId } });
     if (!token) throw new Error("Unable to find token");
     return { data: token, error: null };
   } catch (error) {
