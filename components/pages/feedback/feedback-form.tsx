@@ -103,7 +103,7 @@ export function FeedbackForm({ tokenId }: { tokenId: string }) {
             render={({ field }) => (
               <FormItem className="mb-4">
                 <Label htmlFor="companyName">
-                  Company's name<span className="text-destructive dark:text-red-300">*</span>
+                  Company&apos;s name<span className="text-destructive dark:text-red-300">*</span>
                 </Label>
                 <FormControl>
                   <Input {...field} id="companyName" placeholder="Bytecoup pvt ltd" type="text" />
@@ -117,7 +117,7 @@ export function FeedbackForm({ tokenId }: { tokenId: string }) {
             name="website"
             render={({ field }) => (
               <FormItem className="mb-4">
-                <Label htmlFor="website">Company's website</Label>
+                <Label htmlFor="website">Company&apos;s website</Label>
                 <FormControl>
                   <Input {...field} id="website" placeholder="bytecoup.com" type="text" />
                 </FormControl>
