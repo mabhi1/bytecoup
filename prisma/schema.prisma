@@ -33,8 +33,8 @@ model Career {
   updatedAt  DateTime @updatedAt
 }
 
-model Testimonial {
-  id                  String  @id @default(auto()) @map("_id") @db.ObjectId
+model Feedback {
+  id                  String   @id @default(auto()) @map("_id") @db.ObjectId
   name                String
   companyName         String
   website             String?
@@ -42,9 +42,23 @@ model Testimonial {
   email               String
   phone               String?
   overallSatisfaction Int
-  feedback            String
-  expectationMet      Boolean @default(true)
+  feedback            String?
+  expectationMet      Boolean  @default(true)
   suggestions         String?
-  reConsider          Boolean @default(true)
+  reConsider          Boolean  @default(true)
   publishable         Boolean
+  createdAt           DateTime @default(now())
+  updatedAt           DateTime @updatedAt
+}
+
+enum FeedbackTokenStatus {
+  created
+  closed
+}
+
+model FeedbackToken {
+  id        String              @id @default(auto()) @map("_id") @db.ObjectId
+  status    FeedbackTokenStatus
+  createdAt DateTime            @default(now())
+  updatedAt DateTime            @updatedAt
 }
