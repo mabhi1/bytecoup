@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { Separator } from "@/components/ui/separator";
 import { Toaster } from "sonner";
+import { SessionProvider } from "next-auth/react";
 
 const heebo = Heebo({ subsets: ["latin"] });
 
@@ -24,11 +25,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn(heebo.className, "flex flex-col min-h-screen tracking-wide text-sm md:text-base")}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
-          <Header />
-          <main className="flex-1 w-full max-w-7xl mx-auto p-5 pt-0">{children}</main>
-          <Separator />
-          <Footer />
-          <Toaster closeButton richColors position="top-right" />
+          <SessionProvider>
+            {children}
+            <Toaster closeButton richColors position="top-right" />
+          </SessionProvider>
         </ThemeProvider>
       </body>
     </html>

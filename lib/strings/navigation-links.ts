@@ -1,4 +1,4 @@
-import { Home, Notebook, Settings, SquareLibrary, SquarePen } from "lucide-react";
+import { Home, KeyRound, Notebook, Settings, SquareLibrary, SquarePen } from "lucide-react";
 
 export const links = [
   {
@@ -25,5 +25,20 @@ export const links = [
     title: "contact",
     href: "/contact",
     icon: SquarePen,
+  },
+];
+
+export const authLinks = [
+  {
+    title: "login",
+    href: "/login",
+    icon: KeyRound,
+    auth: false,
+  },
+  {
+    title: "dashboard",
+    href: "/dashboard",
+    icon: KeyRound,
+    auth: true,
   },
 ];

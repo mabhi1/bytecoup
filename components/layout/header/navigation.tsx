@@ -3,18 +3,30 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { links } from "@/lib/strings/navigation-links";
+import { authLinks, links } from "@/lib/strings/navigation-links";
+import { useSession } from "next-auth/react";
+import { useEffect, useState } from "react";
 
 export default function Navigation() {
   const pathname = usePathname();
-
+  const { data: session, status } = useSession();
+  const [navLinks, setNavLinks] = useState(
+    session?.user
+      ? [...links, ...authLinks.filter((link) => link.auth === true)]
+      : [...links, ...authLinks.filter((link) => link.auth === false)]
+  );
   const isActive = (currentPath: string) => {
     return pathname === currentPath;
   };
 
+  useEffect(() => {
+    if (session?.user) setNavLinks([...links, ...authLinks.filter((link) => link.auth === true)]);
+    else setNavLinks([...links, ...authLinks.filter((link) => link.auth === false)]);
+  }, [status, session?.user]);
+
   return (
-    <nav className="md:flex gap-8 hidden">
-      {links.map((link) => (
+    <nav className="lg:flex gap-8 hidden">
+      {navLinks.map((link) => (
         <Link
           href={link.href}
           key={link.href}
